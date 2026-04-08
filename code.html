@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Keshav Sharma - Data Analyst Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-dim": "#ff51fa",
+                    "on-secondary-container": "#fff5f9",
+                    "outline": "#76757a",
+                    "on-error": "#490013",
+                    "surface": "#0e0e12",
+                    "surface-container": "#19191e",
+                    "on-tertiary-fixed-variant": "#005e64",
+                    "primary-fixed": "#c683ff",
+                    "inverse-on-surface": "#55545a",
+                    "inverse-primary": "#8d00e6",
+                    "tertiary": "#8ff5ff",
+                    "surface-container-high": "#1f1f25",
+                    "background": "#0e0e12",
+                    "on-tertiary-container": "#005359",
+                    "on-primary": "#480079",
+                    "on-tertiary-fixed": "#003f43",
+                    "outline-variant": "#48474c",
+                    "on-error-container": "#ffb2b9",
+                    "inverse-surface": "#fcf8fe",
+                    "secondary-container": "#a900a9",
+                    "error": "#ff6e84",
+                    "surface-bright": "#2c2b32",
+                    "primary-dim": "#a533ff",
+                    "on-primary-fixed-variant": "#450074",
+                    "on-secondary": "#400040",
+                    "error-container": "#a70138",
+                    "on-secondary-fixed-variant": "#920091",
+                    "tertiary-dim": "#00deec",
+                    "on-primary-fixed": "#000000",
+                    "primary": "#cf96ff",
+                    "primary-container": "#c683ff",
+                    "surface-container-low": "#131318",
+                    "secondary-fixed-dim": "#ffa6f3",
+                    "error-dim": "#d73357",
+                    "secondary": "#ff51fa",
+                    "surface-container-lowest": "#000000",
+                    "primary-fixed-dim": "#bc6fff",
+                    "on-surface-variant": "#acaab0",
+                    "on-secondary-fixed": "#620061",
+                    "surface-variant": "#25252b",
+                    "on-tertiary": "#005d63",
+                    "tertiary-fixed-dim": "#00deec",
+                    "on-background": "#f3eff6",
+                    "secondary-fixed": "#ffbdf3",
+                    "on-surface": "#f3eff6",
+                    "surface-container-highest": "#25252b",
+                    "surface-tint": "#cf96ff",
+                    "tertiary-container": "#00eefc",
+                    "on-primary-container": "#37005f",
+                    "tertiary-fixed": "#00eefc",
+                    "surface-dim": "#0e0e12"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0e0e12;
+            color: #f3eff6;
+            font-family: 'Manrope', sans-serif;
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(207, 150, 255, 0.03) 0%, transparent 50%),
+                linear-gradient(rgba(25, 25, 30, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(25, 25, 30, 0.1) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neon-glow-primary:hover {
+            box-shadow: 0 0 30px rgba(207, 150, 255, 0.15);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link.active {
+            color: #cf96ff;
+            border-bottom: 2px solid #cf96ff;
+            font-weight: 700;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0e0e12]/80 backdrop-blur-xl border-b border-[#48474c]/20 flex justify-between items-center px-8 py-4 max-w-full">
+<div class="text-2xl font-bold tracking-tighter text-[#cf96ff] font-['Space_Grotesk'] cursor-default">Keshav Sharma</div>
+<div class="hidden md:flex gap-10" id="nav-links">
+<a class="nav-link active text-[#48474c] hover:text-[#cf96ff] font-['Space_Grotesk'] tracking-tight uppercase pb-1" href="#hero">Hero</a>
+<a class="nav-link text-[#48474c] hover:text-[#cf96ff] font-['Space_Grotesk'] tracking-tight uppercase pb-1" href="#experience">Experience</a>
+<a class="nav-link text-[#48474c] hover:text-[#cf96ff] font-['Space_Grotesk'] tracking-tight uppercase pb-1" href="#projects">Projects</a>
+<a class="nav-link text-[#48474c] hover:text-[#cf96ff] font-['Space_Grotesk'] tracking-tight uppercase pb-1" href="#contact">Contact</a>
+</div>
+<a href="resume.pdf" download class="bg-[#cf96ff] text-[#480079] px-6 py-2 font-bold font-['Space_Grotesk'] uppercase hover:brightness-125 transition-all duration-200 active:scale-95 shadow-lg shadow-primary/20 inline-block text-center">
+        Resume
+</a>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="min-h-[870px] flex flex-col justify-center px-8 md:px-24" id="hero">
+<div class="max-w-5xl">
+<div class="inline-block bg-surface-container px-3 py-1 mb-6 border-l-2 border-primary">
+<span class="text-tertiary font-label uppercase text-xs tracking-widest">STATUS: ACTIVE_ANALYST</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-headline font-bold tracking-tighter mb-6 leading-none">
+                KESHAV SHARMA <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Aspiring Data Analyst</span>
+</h1>
+<p class="text-xl md:text-2xl font-body text-on-surface-variant max-w-3xl mb-12">
+                Python • SQL • Power BI • Excel | Turning raw data into strategic insights. Engineering digital clarity from industrial noise.
+            </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary px-10 py-4 font-headline font-bold uppercase tracking-widest flex items-center gap-2 hover:brightness-110 hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-primary/10 hover:shadow-primary/30" href="https://github.com/Keshav540" target="_blank">
+<span class="material-symbols-outlined text-xl">database</span>
+                    GitHub
+                </a>
+<a class="border border-outline-variant hover:border-secondary text-secondary px-10 py-4 font-headline font-bold uppercase tracking-widest flex items-center gap-2 hover:bg-secondary/10 hover:-translate-y-1 transition-all duration-300" href="https://linkedin.com/in/keshavsharma001" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+</svg>
+                    LinkedIn
+                </a>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-32 px-8 md:px-24 bg-surface-container-low" id="experience">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-4">
+<h2 class="text-sm font-label uppercase tracking-[0.3em] text-secondary mb-4">DEPLOYMENT_HISTORY</h2>
+<h3 class="text-4xl font-headline font-bold leading-tight">PROFESSIONAL <br/>EXPERIENCE</h3>
+</div>
+<div class="md:col-span-8 flex flex-col gap-px bg-outline-variant/20">
+<!-- Exp Item 1 -->
+<div class="bg-surface p-10 group hover:bg-surface-container-high transition-all">
+<div class="flex flex-col md:flex-row justify-between mb-6">
+<div>
+<h4 class="text-2xl font-headline font-bold text-on-surface">PRODUCT GROWTH INTERN</h4>
+<p class="text-primary font-label uppercase tracking-widest text-sm">APNIBUS</p>
+</div>
+<div class="mt-4 md:mt-0 text-right">
+<span class="text-on-surface-variant font-label text-sm">JUNE 2025 – AUGUST 2025</span>
+</div>
+</div>
+<p class="text-on-surface-variant font-body leading-relaxed max-w-2xl">Optimizing user acquisition funnels and analyzing retention cohorts. Leveraging predictive modeling to identify growth levers in high-frequency transport sectors.</p>
+</div>
+<!-- Exp Item 2 -->
+<div class="bg-surface p-10 group hover:bg-surface-container-high transition-all">
+<div class="flex flex-col md:flex-row justify-between mb-6">
+<div>
+<h4 class="text-2xl font-headline font-bold text-on-surface">DATA ANALYST INTERN</h4>
+<p class="text-primary font-label uppercase tracking-widest text-sm">LABMENTIX</p>
+</div>
+<div class="mt-4 md:mt-0 text-right">
+<span class="text-on-surface-variant font-label text-sm">MARCH 2025 – MAY 2025</span>
+</div>
+</div>
+<p class="text-on-surface-variant font-body leading-relaxed max-w-2xl">Structured SQL databases for healthcare analytics. Automated reporting dashboards in Power BI, reducing manual data processing time by 40%.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-32 px-8 md:px-24" id="projects">
+<div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<h2 class="text-sm font-label uppercase tracking-[0.3em] text-tertiary mb-4">DATA_MODULES</h2>
+<h3 class="text-5xl font-headline font-bold">PROJECT PORTFOLIO</h3>
+</div>
+<div class="h-px bg-outline-variant/30 flex-grow mx-8 hidden md:block"></div>
+<span class="text-on-surface-variant font-label text-xs">TOTAL_ENTRIES: 03</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<a class="group cursor-pointer block" href="https://github.com/Keshav540/tech-layoffs-analysis" target="_blank">
+<div class="relative aspect-video overflow-hidden mb-6 bg-surface-container-high border border-outline-variant/20">
+<img alt="Tech Layoffs Analysis Chart" class="w-full h-full object-cover transition-all duration-500 scale-105 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6OxciEAO1ehFDotQz1i2z3YIufH0SUUyOyGvlx9q9GbqgOo-tF6UsQLBgrs_E6qFLNV9meeLipxUb9JFvPbN53CO6e0OdnWs3xdGeC3n7ve5hh1blC8m3E0a21dg1q1tZ3F28qFWaA87ukRCwpJ035QbUiImR5X3QA3IxUppwJRCrOf73RzLirt9LI7Yj-1BkW-TFOzw1tS9KVYJE08fHMzaUolyyHZFh1vQBcvCISJi4H6xgY9-bpx9YbOVS97YgcsoJvcB-aQo"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-transform">open_in_new</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-xl font-headline font-bold group-hover:text-primary transition-colors">Tech Layoffs Analysis</h4>
+<span class="material-symbols-outlined text-primary transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">north_east</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body mb-4">25 years of tech hiring & layoffs — EDA + Dashboard</p>
+<div class="flex gap-2">
+<span class="text-[10px] font-label px-2 py-1 bg-surface-container-highest text-tertiary uppercase tracking-tighter">PYTHON</span>
+<span class="text-[10px] font-label px-2 py-1 bg-surface-container-highest text-tertiary uppercase tracking-tighter">STATISTICS</span>
+</div>
+</a>
+<!-- Project 2 -->
+<a class="group cursor-pointer block" href="https://github.com/Keshav540/data-analytics-portfolio" target="_blank">
+<div class="relative aspect-video overflow-hidden mb-6 bg-surface-container-high border border-outline-variant/20">
+<img alt="BI Dashboard Visualization" class="w-full h-full object-cover transition-all duration-500 scale-105 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfZ21fLbIRD5vDLzFSOq23nGQJuDHklBHqwgaHF-SvCdaC524bVXHVD_pUH3Jo-IWPW6kWoJ0XcWrIIUMcZMGl7hUMZv1sYsxfPzy6IbQphibMsoODjNM6J0g4xM-_lUzENecPPOOC2FqMkBZ06AnldxCIja6E3W5MPUYWMppsGnxVx0Dyi5kltbu2vAAXsStzYiwDKLF7Jczat9w7kwkHCeL3riLJ_G-u04AV39IuG0DOHaZOvq3tVBXZKVq0tUoiZPeRIW1Bf7o"/>
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-transform">open_in_new</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-xl font-headline font-bold group-hover:text-secondary transition-colors">Data Analytics Portfolio</h4>
+<span class="material-symbols-outlined text-secondary transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">north_east</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body mb-4">A collection of 5 end-to-end data projects covering the full analytics stack — from data collection to visualization — built during my data analytics bootcamp.</p>
+<div class="flex gap-2">
+<span class="text-[10px] font-label px-2 py-1 bg-surface-container-highest text-tertiary uppercase tracking-tighter">POWER BI</span>
+<span class="text-[10px] font-label px-2 py-1 bg-surface-container-highest text-tertiary uppercase tracking-tighter">SQL</span>
+</div>
+</a>
+<!-- Project 3 -->
+<a class="group cursor-pointer block" href="https://github.com/Keshav540/Learning-_From_Data-Analysis-Bootcamp" target="_blank">
+<div class="relative aspect-video overflow-hidden mb-6 bg-surface-container-high border border-outline-variant/20">
+<img alt="Code Environment View" class="w-full h-full object-cover transition-all duration-500 scale-105 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZGL3-PwUpsUa81j-vrKr6KidZ96UefkbH90WKvA5O8t6HMOOfSjm9XVq0iv_XMcmhqRCE7WWGZeQmr-VsEOSeZW0uChMu2y8mMxq5XdAQBUk8mGt63SARtATF_CJS-zugE8CtJJ5rMi7ZkipdH11KBClGiYdS9ExbtXE7itgC53PbLniai3y_JqgsfMUO3nr2Exzau05vvdZLIGWIcoq6d5mrLCAbylT2T3SbKMbNG9irJBfr4KHqTHMj4KnljzNuOQq5diUwOUM"/>
+<div class="absolute inset-0 bg-tertiary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-transform">open_in_new</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-xl font-headline font-bold group-hover:text-tertiary transition-colors">Bootcamp Learnings</h4>
+<span class="material-symbols-outlined text-tertiary transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">north_east</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body mb-4">This repository documents my learning journey from the Data Analysis Bootcamp, where I explored tools and techniques essential for modern data-driven decision-making.</p>
+<div class="flex gap-2">
+<span class="text-[10px] font-label px-2 py-1 bg-surface-container-highest text-tertiary uppercase tracking-tighter">EXCEL</span>
+<span class="text-[10px] font-label px-2 py-1 bg-surface-container-highest text-tertiary uppercase tracking-tighter">TABLEAU</span>
+</div>
+</a>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8 md:px-24" id="contact">
+<div class="bg-surface-container p-12 md:p-24 border border-outline-variant/10 text-center relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
+<h2 class="text-4xl md:text-6xl font-headline font-bold mb-8">INITIATE CONNECTION?</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto mb-12 font-body text-lg">
+                I am currently seeking opportunities to apply my analytical toolkit to complex business problems. Let's discuss your data strategy.
+            </p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<a class="bg-on-surface text-surface px-12 py-5 font-headline font-black uppercase tracking-widest hover:bg-primary transition-colors cursor-pointer" href="mailto:keshavsh1695@gmail.com">
+                    SEND_MESSAGE
+                </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e12] w-full border-t border-[#48474c]/20 flex flex-col md:flex-row justify-between items-center px-12 py-10">
+<div class="font-['Space_Grotesk'] text-[10px] tracking-[0.1em] uppercase text-[#48474c] mb-6 md:mb-0">
+        © 2026 Keshav Sharma
+    </div>
+<div class="flex gap-8">
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.1em] uppercase text-[#48474c] hover:text-[#cf96ff] transition-colors" href="https://linkedin.com/in/keshavsharma001" target="_blank">LinkedIn</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.1em] uppercase text-[#48474c] hover:text-[#cf96ff] transition-colors" href="https://github.com/Keshav540" target="_blank">GitHub</a>
+</div>
+</footer>
+<script>
+    // Navigation active state logic
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    function scrollActive() {
+        const scrollY = window.pageYOffset;
+
+        sections.forEach((current) => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 100;
+            const sectionId = current.getAttribute("id");
+
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                document.querySelector(`#nav-links a[href*=${sectionId}]`).classList.add("active");
+                document.querySelector(`#nav-links a[href*=${sectionId}]`).classList.remove("text-[#48474c]");
+                document.querySelector(`#nav-links a[href*=${sectionId}]`).classList.add("text-[#cf96ff]");
+            } else {
+                document.querySelector(`#nav-links a[href*=${sectionId}]`).classList.remove("active");
+                document.querySelector(`#nav-links a[href*=${sectionId}]`).classList.add("text-[#48474c]");
+                document.querySelector(`#nav-links a[href*=${sectionId}]`).classList.remove("text-[#cf96ff]");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", scrollActive);
+
+    // Click handler for manual override
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            navLinks.forEach(l => {
+                l.classList.remove('active', 'text-[#cf96ff]');
+                l.classList.add('text-[#48474c]');
+            });
+            link.classList.add('active', 'text-[#cf96ff]');
+            link.classList.remove('text-[#48474c]');
+        });
+    });
+</script>
+</body></html>
